@@ -1,0 +1,81 @@
+.footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 2rem;
+    border-color: black;
+    border-style: dashed;
+    font-weight: 700;
+    position: relative; /* Añadido para posicionar el botón */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    padding-right: 3rem;
+    padding-top: 1rem;   
+    
+  }
+
+  
+  .scroll-to-top-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0%;
+    padding:1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 22px; /* Ajusta la posición vertical */
+    right: 400px; /* Ajusta la posición horizontal */
+    size: 20rem;
+    ;
+  }
+  
+  .scroll-to-top-button i {
+    font-size:30px;
+    color: #ffffff; /* Ajusta el color del icono a blanco */
+}
+
+  @media (max-width: 991.98px) {
+    .scroll-to-top-button {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 34%; /* Ajusta la posición vertical */
+        right: 3%; /* Ajusta la posición horizontal */
+        margin-right: 2rem;
+      }
+
+      p{
+        font-size: 90%;
+        
+      }
+
+      .footer-content p {
+        padding-right: 5rem;
+              
+        
+      }
+
+     
+      
+    
+   
+}

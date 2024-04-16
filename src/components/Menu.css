@@ -1,0 +1,90 @@
+#boton-proyectos{
+    color: salmon;
+}
+
+
+
+
+a{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    
+}
+
+.nav-item{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: large;
+
+}
+
+.social-icons{
+    margin-top: 0.5rem;
+}
+
+.container{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon{
+    width: 4rem;
+}
+
+.d-inline-block{
+    padding-right: 1rem;
+    width: 3rem;
+}
+/* Estilos específicos para el menú desplegable en móviles */
+@media (max-width: 991.98px) {
+
+  img{
+    margin-left: 0.3rem;
+  }
+
+    .navbar-toggler {
+      margin-top: 0.5rem;
+    }
+  
+    .navbar-collapse {
+      background-color: #f8f9fa; /* Fondo del menú desplegable */
+      border-top: 1px solid #dee2e6; /* Línea superior */
+      padding: 0.5rem; /* Espaciado interno */
+    }
+  
+    .dropdown-menu {
+      background-color: #f8f9fa; /* Fondo del menú desplegable */
+      border: none; /* Sin borde */
+      padding: 0.5rem 0; /* Espaciado interno */
+    }
+  
+    .dropdown-divider {
+      background-color: #dee2e6; /* Color de la línea divisoria */
+    }
+  
+    .icon {
+      width: 2.5rem; /* Tamaño reducido para íconos de redes sociales */
+    }
+  }
+
+  .navbar {
+    border-color: black;
+    border-style: dashed;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+/* Aplicar la animación a la imagen */
+.logo-img {
+    animation: shake 2s; /* Duración de la animación: 2 segundos */
+    animation-fill-mode: forwards; /* Mantener el estado final de la animación */
+}
+

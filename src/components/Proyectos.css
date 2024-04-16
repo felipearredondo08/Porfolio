@@ -1,0 +1,227 @@
+button {
+	margin: 0 auto;
+	/* Centra horizontalmente */
+	display: flex;
+	color: black;
+	padding: 0.5rem 3rem;
+	text-decoration: none;
+	background: hsl(187, 75%, 64%);
+	border-radius: 0.6rem;
+	font-weight: 700;
+	border: 0.35rem solid;
+
+}
+
+
+
+.cta__text-column button {
+	align-items: center;
+	margin-left: 26%;
+	align-self: center;
+	font-family: "IBM Plex Mono", monospace;
+}
+
+.contenedor-tarjetas {
+
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 3rem;
+}
+
+.lenguajes {
+	font-weight: 800;
+}
+
+@media (min-width: 50em) {
+	h2 {
+		font-size: 1.8rem;
+	}
+}
+
+.cta {
+
+	--shadowColor: 187 60% 40%;
+	display: flex;
+	flex-wrap: wrap;
+	background: hsl(187 70% 85%);
+	max-width: 50rem;
+	width: 100%;
+	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 0.5rem solid;
+	margin: 0.8rem;
+}
+
+.cta img {
+	width: 0rem;
+	aspect-ratio: 3 / 2;
+	object-fit: cover;
+	flex: 1 1 300px;
+	outline: 0.5rem solid;
+	margin-left: 0rem;
+}
+
+.cta__text-column {
+	justify-content: center;
+	padding: min(2rem, 5vw) min(2rem, 5vw) min(2.5rem, 5vw);
+	flex: 1 0 50%;
+}
+
+.cta__text-column>*+* {
+	margin: min(1.5rem, 2.5vw) 0 0 0;
+}
+
+.cta a {
+	margin-left: 5rem;
+	display: inline-block;
+	color: black;
+	padding: 0.5rem 3rem;
+	text-decoration: none;
+	background: hsl(187 75% 64%);
+	border-radius: 0.6rem;
+	font-weight: 700;
+	border: 0.35rem solid;
+}
+
+@media (max-width: 767.98px) {
+	.cta a {
+		margin-left: 2.5rem;
+		/* Cambia el margen a 0 en pantallas de celular */
+	}
+}
+
+#titulo-proyectos {
+	text-align: center;
+	margin-top: 3rem;
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 50px;
+	margin-bottom: 2rem;
+}
+
+
+/* cuando escribi esto las tarjetas no aparecieron mas tipo flex y se pusieron una bajo la otra */
+.proyectos-container {
+
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	--shadowColor: 187 60% 40%;
+	background: hsl(306, 100%, 81%);
+	width: 90%;
+	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+	border-radius: 0.8rem;
+	overflow: hidden;
+	border: 0.5rem solid;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.proyectos-container:hover {
+	--shadowColor: 200 60% 40%;
+
+}
+
+
+
+
+
+#foto-portada::after {
+	content: '';
+	position: absolute;
+	top: -3%;
+	left: -3%;
+	right: -3%;
+	bottom: -3%;
+	z-index: -1;
+	border: 2px dashed rgb(0, 130, 134);
+	border-radius: 25rem;
+	pointer-events: none;
+	animation: animateBorder 3s linear infinite;
+	/* Aplica la animación al borde de puntos */
+}
+
+@keyframes animateBorder {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.cta:hover {
+	transform: scale(1.02);
+	/* Cambia el tamaño al 102% del tamaño original */
+	transition: transform 0.3s ease;
+	/* Agrega una transición suave */
+	--shadowColor: 200 60% 40%;
+}
+
+@media (max-width: 991.98px) {
+
+	#boton-modal {
+		margin: 3rem;
+	}
+
+	.cta__text-column button {
+		align-items: center;
+		margin-left: 18%;
+		align-self: center;
+	}
+
+
+
+
+
+	.modal-video {
+		width: 100%;
+		/* Ancho del video al 100% del contenedor */
+		height: auto;
+		/* Altura automática para mantener la relación de aspecto */
+		max-width: 100%;
+		/* Ancho máximo igual al ancho del contenedor */
+		max-height: 90vh;
+		/* Altura máxima igual al 90% del alto de la ventana */
+	}
+
+	.proyectos-container {
+
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		--shadowColor: 187 60% 40%;
+		background: hsl(306, 100%, 81%);
+		width: 100%;
+		box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+		border-radius: 0.0rem;
+		overflow: hidden;
+		border: 0.5rem solid;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 3rem;
+	}
+
+	.cta {
+
+		--shadowColor: 187 60% 40%;
+		display: flex;
+		flex-wrap: wrap;
+		background: hsl(187 70% 85%);
+		max-width: 50rem;
+		width: 100%;
+		box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+		border-radius: 0rem;
+		overflow: hidden;
+		border-top: 0.5rem solid;
+		border-bottom: 0.5rem solid;
+		margin: 1rem;
+
+	}
+
+
+
+}

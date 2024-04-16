@@ -1,0 +1,79 @@
+.container-about {
+    --shadowColor: 187 60% 40%;
+    background: hsl(68, 100%, 82%);
+    width: 90%;
+    box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+    border-radius: 0.8rem;
+    overflow: hidden;
+    border: 0.5rem solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-about:hover {
+    --shadowColor: 200 60% 40%;
+   
+}
+
+.subtitulos{
+    text-align: center;
+    margin-top: 3rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    
+}
+
+.descripcion{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    padding:4rem;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+
+.container-iconos{
+   text-align: center;
+   padding-bottom: 1rem;
+   
+}
+
+.icon-about{
+    margin:2rem;
+    width: 5rem;
+}
+
+@media (max-width: 991.98px) {
+    .descripcion{
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        font-style: normal;
+        padding:1rem;
+        font-size: 1rem;
+        text-align: justify;
+        
+    }
+
+    .container-about {
+        --shadowColor: 187 60% 40%;
+        background: hsl(68, 100%, 82%);
+        width: 100%;
+        box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+        border-radius: 0.0rem;
+        overflow: hidden;
+        border: 0.5rem solid;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon-about{
+        margin:2rem;
+        width: 3.4rem;
+    }
+    
+   
+}
+
