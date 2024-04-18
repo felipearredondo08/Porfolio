@@ -16,7 +16,7 @@ body {
 
  .dark-mode p{
    transition: background-color 0.5s ease, color 0.5s ease; 
-   color:#010101
+   color:#322626
  }
 
  .dark-mode h2{

@@ -163,6 +163,7 @@ button {
 }
 
 @media (max-width: 991.98px) {
+	
 
 	#boton-modal {
 		margin: 3rem;
@@ -189,7 +190,7 @@ button {
 		/* Altura máxima igual al 90% del alto de la ventana */
 	}
 
-	.proyectos-container {
+	#containerproyectos {
 
 		margin-top: 3rem;
 		margin-bottom: 3rem;
@@ -203,6 +204,14 @@ button {
 		margin-left: auto;
 		margin-right: auto;
 		padding-bottom: 3rem;
+		
+  
+	}
+
+	.dark-mode #containerproyectos{
+		box-shadow: 0 0 40px rgb(255, 130, 232);
+		background-color: rgb(10, 10, 10);
+        color: white;
 	}
 
 	.cta {
@@ -222,6 +231,34 @@ button {
 
 	}
 
+	
 
+}
 
+.dark-mode .proyectos-container {
+   
+	background-color: rgb(10, 10, 10);
+    color: white;
+    box-shadow: 0 0 40px rgb(255, 130, 232);;
+    border-width: 0.4rem;
+}
+
+.dark-mode .cta{
+	border-color:rgb(202, 202, 202);
+	box-shadow: 0 0 10px rgb(255, 130, 232);;
+    border-width: 0.4rem;
+}
+.dark-mode .cta:hover {
+	transform: scale(1.02);
+	/* Cambia el tamaño al 102% del tamaño original */
+	transition: transform 0.3s ease;
+	/* Agrega una transición suave */
+	--shadowColor: 200 60% 40%;
+	box-shadow: 0 0 30px rgb(255, 130, 232);;
+    border-width: 0.4rem;
+}
+
+.dark-mode #titulo-proyectos {
+	color: azure;
+    text-shadow: 0 0 50px rgb(255, 135, 253);
 }

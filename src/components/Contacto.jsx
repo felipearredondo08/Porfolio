@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './Contacto.css';
 import facelogo from "../assets/facebook.png";
@@ -5,8 +6,7 @@ import instalogo from "../assets/instagram.png";
 import gitlogo from "../assets/github.png";
 import linkedinlogo from "../assets/linkedin.png";
 
-
-const Contacto = () => {
+const Contacto = ({ darkMode }) => {
     const [nombre, setNombre] = useState('');
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
@@ -34,8 +34,8 @@ const Contacto = () => {
 
     return (
         <>
-            <div className='contenedor-contacto'>
-                <div className='informacion-contacto'>
+            <div className={`contenedor-contacto ${darkMode ? 'dark-mode' : ''}`}>
+            <div className='informacion-contacto'>
                     <h2>Contacto</h2>
                     <h3>Email</h3>
                     <p id="pemail">hellvilleskateshop@gmail.com</p>

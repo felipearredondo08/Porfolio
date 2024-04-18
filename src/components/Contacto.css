@@ -223,6 +223,7 @@
 
     }
 
+    
 
 
 }
@@ -277,5 +278,47 @@
     bottom: 0;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
+}
+
+.dark-mode .informacion-contacto{
+    background-color: rgb(10, 10, 10);
+   
+    box-shadow: 0 0 40px hsl(178, 83%, 45%);;;
+    border-width: 0.4rem;
+}
+
+.dark-mode .informacion-contacto h2{
+    color: azure;
+}
+
+.dark-mode .informacion-contacto h3{
+    color: azure;
+}
+
+.dark-mode .informacion-contacto p{
+    color: azure;
+}
+
+.dark-mode .formulario-contacto {
+    background-color: rgb(10, 10, 10);
+   
+    box-shadow: 0 0 40px hsl(57, 79%, 58%);
+    border-width: 0.4rem;
+}
+
+.dark-mode .formulario-contacto label{
+    color:azure
+}
+
+.dark-mode #mensaje{
+    border-color:rgb(243, 224, 81);
+}
+
+.dark-mode #email{
+    border-color:rgb(243, 224, 81);
+}
+
+.dark-mode #nombre{
+    border-color:rgb(243, 224, 81);
 }
 

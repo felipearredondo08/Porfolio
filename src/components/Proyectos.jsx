@@ -123,11 +123,11 @@ import calculadora from "../assets/calculadora.png";
 import flappyVideo from "../assets/flappy.mp4";
 import flappy from "../assets/flappy-bird-screenshot.png";
 import hitandjumpVideo from "../assets/hitandjump.mp4";
-import hitandjump from "../assets/hitandjump.png"
+import hitandjump from "../assets/hitandjump.png";
 
 Modal.setAppElement('#root');
 
-const Proyectos = () => {
+const Proyectos = ({ darkMode }) => {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [selectedVideo, setSelectedVideo] = useState(flappyVideo);
 
@@ -142,7 +142,7 @@ const Proyectos = () => {
 
     return (
         <>
-            <div className="proyectos-container">
+            <div id="containerproyectos" className={`proyectos-container ${darkMode ? 'dark-mode' : ''}`}>
                 <h2 id="titulo-proyectos">Proyectos</h2>
 
                 <div className="contenedor-tarjetas">

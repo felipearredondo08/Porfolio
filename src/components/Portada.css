@@ -12,7 +12,7 @@
   text-align: center;
   padding-bottom: 3rem;
   padding-top: 9rem;
-
+  
 }
 
 .contenedor-nombre {
@@ -34,6 +34,7 @@
   border-width: 0.3rem;
   width: 30%;
   margin-bottom: 10rem;
+  margin-right: 6rem;
 
 
 }
@@ -85,7 +86,7 @@ h1 {
     border-color: rgb(0, 130, 134);
     border-width: 0.3rem;
     margin-bottom: 5rem;
-
+  
 
 
   }
@@ -177,6 +178,18 @@ h2 {
 .dark-mode #desarrollador {
   color: white;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.6);
+  
 
 }
 
+.dark-mode #foto-portada {
+ 
+  border-radius: 25rem;
+  border-color: black;
+  border-style: dashed;
+  border-color: rgb(255, 255, 255);
+ 
+  box-shadow: 0 0 50px rgb(255, 255, 255);;
+
+  transition: all 0.5s ease; /* Transición suave de medio segundo */
+}
