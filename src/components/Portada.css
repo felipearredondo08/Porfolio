@@ -1,131 +1,160 @@
-
 .dark-mode {
-  background-color: #000000; /* Fondo en modo oscuro */
-  color: #fff; /* Color de texto en modo oscuro */
+  background-color: #000000;
+  /* Fondo en modo oscuro */
+  color: #fff;
+  /* Color de texto en modo oscuro */
 }
 
 .PortadaTotal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 3rem;
-    margin-top: 7rem;
-    margin-bottom: 11rem;
-    margin-right: 6rem;
-  
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 3rem;
+  padding-top: 9rem;
+
 }
 
 .contenedor-nombre {
-    padding: 3rem;
-    padding-top: 5rem;
-    margin-left: 3rem;
+  padding: 3rem;
+  padding-top: 5rem;
+  margin-left: 3rem;
+  margin-bottom: 10rem;
+
 
 }
 
 
 #foto-portada {
 
+  border-radius: 25rem;
+  border-color: black;
+  border-style: dashed;
+  border-color: rgb(0, 130, 134);
+  border-width: 0.3rem;
+  width: 30%;
+  margin-bottom: 10rem;
+
+
+}
+
+
+
+h1 {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4rem;
+}
+
+#felipe-color {
+  background-color: rgb(50, 188, 212);
+}
+
+#arredondo-color {
+  background-color: rgb(172, 84, 254);
+}
+
+@media (max-width: 991.98px) {
+
+  .contenedor-nombre {
+    padding: 3rem;
+    padding-top: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
+
+
+  }
+
+  .PortadaTotal {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+
+
+  }
+
+  #foto-portada {
+    width: 100%;
     border-radius: 25rem;
     border-color: black;
     border-style: dashed;
     border-color: rgb(0, 130, 134);
     border-width: 0.3rem;
-    width: 30%;
+    margin-bottom: 5rem;
 
-}
 
-h1 {
+
+  }
+
+  h1 {
+
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
-    font-size: 4rem;
-}
+    font-size: 3rem;
+    margin-left: 3%;
 
-#felipe-color{
-    background-color: rgb(50, 188, 212);
-}
+  }
 
-#arredondo-color{
-    background-color: rgb(172, 84, 254);
-}
+  h2 {
+    margin-left: 3%;
+  }
 
-@media (max-width: 991.98px) {
 
-    .PortadaTotal {
-        display: block;
-        justify-content: center;
-        align-items: center;
-        padding: 3rem;
-        margin-top: -3rem;
-        margin-bottom: 3rem;
-        margin-right: 0rem;
-
-    }
-
-    #foto-portada {
-        width: 100%;
-        border-radius: 25rem;
-        border-color: black;
-        border-style: dashed;
-        border-color: rgb(0, 130, 134);
-        border-width: 0.3rem; 
-          
-    
-    }
-
-    h1 {
-
-        font-family: "IBM Plex Mono", monospace;
-        font-weight: 600;
-        font-style: normal;
-        font-size: 3rem;
-        
-    }
 
 
 }
+
 /* Portada.css */
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
-  
-  .fadeIn {
-    animation: fadeIn 1s ease-in-out;
-    text-align: start;
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+  text-align: start;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
   }
 
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(100%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .slideIn {
-    animation: slideIn 3s ease-in-out;
-  }
-  /* Aplicar retrasos a las animaciones */
+}
+
+.slideIn {
+  animation: slideIn 3s ease-in-out;
+}
+
+/* Aplicar retrasos a las animaciones */
 #felipe-color {
-  animation-delay: 0.5s; /* Retraso para el primer span */
+  animation-delay: 0.5s;
+  /* Retraso para el primer span */
 }
 
 #arredondo-color {
-  animation-delay: 3s; /* Retraso para el segundo span */
+  animation-delay: 3s;
+  /* Retraso para el segundo span */
 }
 
 h2 {
-  animation-delay: 6; /* Retraso para el h2 */
+  animation-delay: 6;
+  /* Retraso para el h2 */
 }
 
 
@@ -135,9 +164,19 @@ h2 {
     padding: 7%;
     padding-top: 5rem;
     margin-left: 0rem;
-}
- 
+  }
+
+  .dark-mode .PortadaTotal{
+    padding-top: 2.8rem;
+  }
 
 }
 
+
+/* Estilo para el modo oscuro */
+.dark-mode #desarrollador {
+  color: white;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.6);
+
+}
 

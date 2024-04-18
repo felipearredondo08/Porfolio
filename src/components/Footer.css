@@ -16,12 +16,15 @@
     margin: 0 auto;
   }
   
+  
+
   .footer-content p {
     padding-right: 3rem;
     padding-top: 1rem;   
     
   }
 
+  
   
   .scroll-to-top-button {
     background-color: #000000;
@@ -43,14 +46,16 @@
   .scroll-to-top-button i {
     font-size:30px;
     color: #ffffff; /* Ajusta el color del icono a blanco */
+    
 }
+
 
   @media (max-width: 991.98px) {
     .scroll-to-top-button {
         background-color: #000000;
         color: #ffffff;
         border: none;
-        border-radius: 50%;
+        border-radius: 0%;
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -61,6 +66,7 @@
         bottom: 34%; /* Ajusta la posición vertical */
         right: 3%; /* Ajusta la posición horizontal */
         margin-right: 2rem;
+        padding:1.7rem
       }
 
       p{
@@ -78,4 +84,36 @@
       
     
    
+}
+
+
+.dark-footer {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: rgb(255, 255, 255);
+    border-style: dashed;
+}
+
+.dark-footer .scroll-to-top-button {
+  background-color: #000000;
+  color: #000000;
+}
+
+.dark-mode p{
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode .letrafooter{
+  color: white;
+}
+
+.dark-mode .scroll-to-top-button i{
+  font-size:30px;
+  color: #ffffff; /* Ajusta el color del icono a blanco */
+  border-color: #ffffff;
+  border: solid;
+  border-radius: 30rem;
+  padding: 0.8rem;
+  border-style: dashed;
+  
 }

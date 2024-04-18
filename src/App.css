@@ -1,7 +1,37 @@
-body{
+body {
    background-color: #e5e5f7;
-
-background-image:  linear-gradient(#a8a8a8 4px, transparent 4px), linear-gradient(to right, #a8a8a8 4px, #e5e5f7 4px);
-background-size: 80px 80px;
+   background-image: linear-gradient(#a8a8a8 4px, transparent 4px), linear-gradient(to right, #a8a8a8 4px, #e5e5f7 4px);
+   background-size: 80px 80px;
 }
 
+.dark-mode {
+   /* Estilos para el modo oscuro */
+   transition: background-color 0.5s ease, color 0.5s ease; 
+   background-color: #010101;
+   /* background-image: linear-gradient(#a8a8a8 4px, transparent 4px), linear-gradient(to right, #a8a8a8 4px, #2a2a2a 4px); */
+   background-image: linear-gradient(#a8a8a8 4px, transparent 4px), linear-gradient(to right, #a8a8a8 4px, #000000 4px);
+   background-size: 80px 80px;
+   color: #fff;
+ }
+
+ .dark-mode p{
+   transition: background-color 0.5s ease, color 0.5s ease; 
+   color:#010101
+ }
+
+ .dark-mode h2{
+   transition: background-color 0.5s ease, color 0.5s ease; 
+   color:#010101
+ }
+
+ .dark-mode label{
+   transition: background-color 0.5s ease, color 0.5s ease; 
+   color:black
+ } 
+
+ .dark-mode h3{
+   
+   color:#010101
+ }
+
+ 
