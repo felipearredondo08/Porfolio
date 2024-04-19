@@ -17,7 +17,7 @@
     display: block;
     margin-bottom: 10px;
     font-weight: 900;
-    
+
 }
 
 .formulario-contacto input[type="text"],
@@ -72,7 +72,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
-   margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .informacion-contacto {
@@ -86,7 +86,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
-   margin-bottom: 2rem;
+    margin-bottom: 2rem;
 
 
 }
@@ -101,7 +101,7 @@
 
 .informacion-contacto h2 {
     text-align: center;
-   
+
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
@@ -112,11 +112,11 @@
 
 .informacion-contacto h3 {
     font-family: "IBM Plex Mono", monospace;
-    font-weight:900;
+    font-weight: 900;
     font-style: normal;
-    text-decoration:underline;
+    text-decoration: underline;
     margin-top: 1.5rem;
-   
+
 }
 
 .informacion-contacto p {
@@ -124,7 +124,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
-    
+
 }
 
 
@@ -147,87 +147,23 @@
 
 
 .formulario-contacto:hover {
-   --shadowColor: 200 60% 40%;
+    --shadowColor: 200 60% 40%;
 }
 
 
 
-.icon-contact{
+.icon-contact {
     width: 4rem;
     margin: 1rem;
     margin-top: 2rem;
     justify-content: center;
-    
+
 }
 
-.iconos-redes{
+.iconos-redes {
     display: flex;
     justify-content: center;
-    
-    
-    
 }
-
-
-@media (max-width: 991.98px) {
-
-    .icon-contact{
-        width: 2.8rem;
-        margin: 1rem;
-    }
-
-    .iconos-redes{
-        display: flex;
-        justify-content: center;
-        
-        
-        
-    }
-
-    #pemail{
-        font-size: medium;
-    }
-
-    .contenedor-contacto {
-        display: block;
-    }
-
-    .formulario-contacto {
-        --shadowColor: 187 60% 40%;
-        background: hsl(57, 79%, 58%);
-        width: 100%;
-        box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
-        border-radius: 0.0rem;
-        overflow: hidden;
-        border: 0.5rem solid;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3rem;
-
-
-    }
-
-    .informacion-contacto {
-        --shadowColor: 187 60% 40%;
-        background: hsl(178, 83%, 45%);
-        width: 100%;
-        box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
-        border-radius: 0.0rem;
-        overflow: hidden;
-        border: 0.5rem solid;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3rem;
-        
-
-
-    }
-
-    
-
-
-}
-
 
 /* boton agregado al ultimo */
 
@@ -280,45 +216,145 @@
     transition: all 0.35s;
 }
 
-.dark-mode .informacion-contacto{
+.dark-mode .informacion-contacto {
     background-color: rgb(10, 10, 10);
-   
-    box-shadow: 0 0 40px hsl(178, 83%, 45%);;;
+    box-shadow: 0 0 10px hsl(178, 83%, 45%);
+    border-width: 0.4rem;
+    transition: all 0.5s ease;
+}
+
+.dark-mode .informacion-contacto:hover {
+    background-color: rgb(10, 10, 10);
+
+    box-shadow: 0 0 60px hsl(178, 83%, 45%);
+    ;
+    ;
     border-width: 0.4rem;
 }
 
-.dark-mode .informacion-contacto h2{
+.dark-mode .informacion-contacto h2 {
     color: azure;
 }
 
-.dark-mode .informacion-contacto h3{
+.dark-mode .informacion-contacto h3 {
     color: azure;
 }
 
-.dark-mode .informacion-contacto p{
+.dark-mode .informacion-contacto p {
     color: azure;
 }
 
 .dark-mode .formulario-contacto {
     background-color: rgb(10, 10, 10);
-   
-    box-shadow: 0 0 40px hsl(57, 79%, 58%);
+
+   box-shadow: none;
     border-width: 0.4rem;
 }
 
-.dark-mode .formulario-contacto label{
-    color:azure
+.dark-mode .formulario-contacto:hover {
+    background-color: rgb(10, 10, 10);
+
+    box-shadow: 0 0 60px hsl(57, 79%, 58%);
+    border-width: 0.4rem;
+    transition: all 0.5s ease;
 }
 
-.dark-mode #mensaje{
-    border-color:rgb(243, 224, 81);
+.dark-mode .formulario-contacto label {
+    color: azure
 }
 
-.dark-mode #email{
-    border-color:rgb(243, 224, 81);
+.dark-mode #mensaje {
+    border-color: rgb(243, 224, 81);
 }
 
-.dark-mode #nombre{
-    border-color:rgb(243, 224, 81);
+.dark-mode #email {
+    border-color: rgb(243, 224, 81);
 }
 
+.dark-mode #nombre {
+    border-color: rgb(243, 224, 81);
+}
+
+
+@media (max-width: 991.98px) {
+
+
+    .icon-contact {
+        width: 2.8rem;
+        margin: 1rem;
+    }
+
+    .iconos-redes {
+        display: flex;
+        justify-content: center;
+
+
+
+    }
+
+    #pemail {
+        font-size: medium;
+    }
+
+    .contenedor-contacto {
+        display: block;
+    }
+
+    .formulario-contacto {
+        --shadowColor: 187 60% 40%;
+        background: hsl(57, 79%, 58%);
+        width: 100%;
+        box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+        border-radius: 0.0rem;
+        overflow: hidden;
+        border: 0.5rem solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+
+
+    }
+
+    .dark-mode .formulario-contacto {
+        --shadowColor: 187 60% 40%;
+        background: hsl(57, 79%, 58%);
+        width: 100%;
+        box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+        border-radius: 0.0rem;
+        overflow: hidden;
+        border: 0.5rem solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    .informacion-contacto {
+        --shadowColor: 187 60% 40%;
+        background: hsl(178, 83%, 45%);
+        width: 100%;
+        box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+        border-radius: 0.0rem;
+        overflow: hidden;
+        border: 0.5rem solid;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3rem;
+    }
+
+    .dark-mode .informacion-contacto{
+        background-color: rgb(10, 10, 10);
+
+        box-shadow: 0 0 60px hsl(178, 83%, 45%);
+        ;
+        ;
+        border-width: 0.4rem;
+    }
+
+    .dark-mode .formulario-contacto {
+        background-color: rgb(10, 10, 10);
+
+        box-shadow: 0 0 60px hsl(57, 79%, 58%);
+        border-width: 0.4rem;
+        
+    }
+}

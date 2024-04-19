@@ -12,51 +12,88 @@
 
 .container-about:hover {
     --shadowColor: 200 60% 40%;
-   
+
 }
 
-.subtitulos{
+.subtitulos {
     text-align: center;
     margin-top: 3rem;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
     font-size: 50px;
-    
+
 }
 
-.descripcion{
+.descripcion {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 600;
     font-style: normal;
-    padding:4rem;
+    padding: 4rem;
     font-size: 1.4rem;
     text-align: justify;
 }
 
 
-.container-iconos{
-   text-align: center;
-   padding-bottom: 1rem;
-   
+.container-iconos {
+    text-align: center;
+    padding-bottom: 1rem;
+
 }
 
-.icon-about{
-    margin:2rem;
+.icon-about {
+    margin: 2rem;
     width: 5rem;
-    
-    
+
+
+}
+
+
+
+
+.dark-mode #container-about {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    box-shadow: 0 0 10px rgb(255, 247, 135);
+    ;
+    border-width: 0.4rem;
+
+}
+
+.dark-mode #container-about:hover {
+    background-color: rgb(10, 10, 10);
+    color: white;
+    box-shadow: 0 0 60px rgb(255, 247, 135);
+    ;
+    border-width: 0.4rem;
+    transition: all 0.5s ease;
+}
+
+.dark-mode #container-about p {
+    color: white;
+}
+
+.dark-mode #container-about h2 {
+    color: azure;
+    text-shadow: 0 0 50px rgb(255, 247, 135);
+}
+
+.dark-mode #container-about .icon-about {
+    filter: drop-shadow(3px 3px 3px rgb(255, 247, 135))
 }
 
 @media (max-width: 991.98px) {
-    .descripcion{
+
+
+
+    .descripcion {
         font-family: "IBM Plex Mono", monospace;
         font-weight: 600;
         font-style: normal;
-        padding:1rem;
+        padding: 1rem;
         font-size: 1rem;
         text-align: justify;
-        
+
     }
 
     .container-about {
@@ -71,32 +108,23 @@
         margin-right: auto;
     }
 
-    .icon-about{
-        margin:2rem;
+    .icon-about {
+        margin: 2rem;
         width: 3.4rem;
     }
-    
    
-}
+    .dark-mode #container-about {
+        background-color: rgb(10, 10, 10);
+        color: white;
+        box-shadow: 0 0 40px rgb(255, 247, 135);
+        border-width: 0.4rem;
+    
+    }
 
-.dark-mode #container-about{
-    background-color: rgb(10, 10, 10);
-    color: white;
-    box-shadow: 0 0 40px rgb(255, 247, 135);;
-    border-width: 0.4rem;
-}
-
-.dark-mode #container-about p{
-    color: white;
-}
-
-.dark-mode #container-about h2{
-    color: azure;
-    text-shadow: 0 0 50px rgb(255, 247, 135);
-}
-
-.dark-mode #container-about .icon-about{
-    filter: drop-shadow(
-        3px 3px 3px  rgb(255, 247, 135)
-    )
+    .dark-mode #container-about:hover {
+        background-color: rgb(10, 10, 10);
+        color: white;
+        box-shadow: 0 0 40px rgb(255, 247, 135);
+        border-width: 0.4rem;
+    }
 }

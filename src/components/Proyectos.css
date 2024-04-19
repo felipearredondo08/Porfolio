@@ -214,6 +214,8 @@ button {
         color: white;
 	}
 
+	
+
 	.cta {
 
 		--shadowColor: 187 60% 40%;
@@ -239,14 +241,24 @@ button {
    
 	background-color: rgb(10, 10, 10);
     color: white;
-    box-shadow: 0 0 40px rgb(255, 130, 232);;
+    box-shadow: 0 0 10px rgb(255, 130, 232);;
     border-width: 0.4rem;
+}
+
+.dark-mode .proyectos-container:hover {
+   
+	background-color: rgb(10, 10, 10);
+    color: white;
+    box-shadow: 0 0 60px rgb(255, 130, 232);;
+    border-width: 0.4rem;
+	transition: all 0.5s ease;
 }
 
 .dark-mode .cta{
 	border-color:rgb(202, 202, 202);
 	box-shadow: 0 0 10px rgb(255, 130, 232);;
     border-width: 0.4rem;
+	
 }
 .dark-mode .cta:hover {
 	transform: scale(1.02);
@@ -256,6 +268,7 @@ button {
 	--shadowColor: 200 60% 40%;
 	box-shadow: 0 0 30px rgb(255, 130, 232);;
     border-width: 0.4rem;
+	transition: all 0.5s ease;
 }
 
 .dark-mode #titulo-proyectos {
