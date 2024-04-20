@@ -143,12 +143,12 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
               <span className="menu-text">Felipe Arredondo</span>
             </a>
           </div>
-          <ul className="nav nav-tabs d-none d-lg-flex">
+          <ul id="backgroundbotones"className="nav nav-tabs d-none d-lg-flex">
             <li className="nav-item">
               <a id="sobremidark" className="nav-link active" aria-current="page" href="#container-about">Sobre mi</a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="boton-proyectos">Proyectos</a>
+            <li id="botonproyectosdrop" className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="boton-proyectos"><span id="spanproyectos">Proyectos</span></a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a className="dropdown-item" href="#mnemo">mNemo</a></li>
                 <li><a className="dropdown-item" href="#receptivo">Receptivo Cataratas</a></li>
@@ -188,7 +188,7 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
                 <a className="nav-link" href={curriculumPdf} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Proyectos</a>
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="spanproyectos">Proyectos</span></a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a className="dropdown-item" href="#mnemo">mNemo</a></li>
                   <li><a className="dropdown-item" href="#receptivo">Receptivo Cataratas</a></li>

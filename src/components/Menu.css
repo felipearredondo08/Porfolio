@@ -1,112 +1,76 @@
-
 .navbar {
   border-color: rgb(255, 255, 255);
   border-style: dashed;
   border-color: black;
+
 }
 
 
-#boton-proyectos{
-    color: salmon;
+#boton-proyectos {
+  color: salmon;
 }
 
 
 
 
-a{
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
-    
-    
-}
-
-.nav-item{
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 600;
-    font-style: normal;
-    font-size: large;
+a {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
 
 
 }
 
-.social-icons{
-    margin-top: 0.5rem;
-    display: flex;
+.nav-item {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+
+
 }
 
-.container{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.social-icons {
+  margin-top: 0.5rem;
+  display: flex;
 }
 
-.icon{
-    width: 4rem;
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-.d-inline-block{
-    padding-right: 1rem;
-    width: 3rem;
+.icon {
+  width: 4rem;
 }
-/* Estilos específicos para el menú desplegable en móviles */
-@media (max-width: 991.98px) {
 
-  
-
-  img{
-    margin-left: 0.3rem;
-  }
-
-    .navbar-toggler {
-      margin-top:0;
-    }
-  
-    .navbar-collapse {
-      background-color: #f8f9fa; /* Fondo del menú desplegable */
-      border-top: 1px solid #dee2e6; /* Línea superior */
-      padding: 0.5rem; /* Espaciado interno */
-    }
-  
-    .dropdown-menu {
-      background-color: #f8f9fa; /* Fondo del menú desplegable */
-      border: none; /* Sin borde */
-      padding: 0.5rem 0; /* Espaciado interno */
-    }
-  
-    .dropdown-divider {
-      background-color: #dee2e6; /* Color de la línea divisoria */
-    }
-  
-    .icon {
-      width: 2.5rem; /* Tamaño reducido para íconos de redes sociales */
-    }
-  }
-
-  
-  @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-3px); }
-    100% { transform: translateX(0); }
+.d-inline-block {
+  padding-right: 1rem;
+  width: 3rem;
 }
+
 
 /* Aplicar la animación a la imagen */
 .logo-img {
-    animation: shake 5s; /* Duración de la animación: 2 segundos */
-    animation-fill-mode: forwards; /* Mantener el estado final de la animación */
+  /* animation: shake 5s; */
+  animation: shake 5s infinite;
+  /* Duración de la animación: 2 segundos */
+  animation-fill-mode: forwards;
+  /* Mantener el estado final de la animación */
 }
 
-.navbar{
+.navbar {
   background-color: #ffffff;
 }
 
 .dark-menu {
-  background-color: #000000; /* Fondo negro */
-  color: #ffffff; /* Texto blanco */
+  background-color: #000000;
+  /* Fondo negro */
+  color: #ffffff;
+  /* Texto blanco */
   /* Agrega cualquier otra propiedad CSS que desees para el modo oscuro */
   border-color: white;
- 
+
 
 }
 
@@ -115,83 +79,223 @@ a{
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-style: normal;
-  
-  
+  margin-left: 0rem;
+
+
 }
 
 
-.dark-mode #menu-logo{
+.dark-mode #menu-logo {
   padding: 0%;
   margin-left: 2%;
   border-radius: 100%;
- width: 11%;
- margin-right: 8.5%;
- background-color: white;
+  width: 11%;
+  margin-right: 8.5%;
+  background-color: white;
   box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.5);
-  
+
 }
 
 
-.dark-mode button{
+.dark-mode button {
   border-color: #dee2e6;
   margin-left: 2rem;
   border-width: 0.2rem;
-  
-  
-  
+
+
+
 }
 
-.dark-mode #hamburguesa{
+.dark-mode #hamburguesa {
   color: #f8f9fa;
   margin: 0%;
 
 }
+
 /* Estilos para las líneas del menú desplegable en modo oscuro */
 .dark-menu .navbar-toggler-icon {
-  background-color: #ffffff; /* Color de fondo blanco para las líneas */
+  background-color: #ffffff;
+  /* Color de fondo blanco para las líneas */
 }
 
 /* Estilos para las líneas del menú desplegable en modo oscuro al estar activo */
 .dark-menu .navbar-toggler-icon:focus,
 .dark-menu .navbar-toggler-icon:hover {
-  background-color: #f8f9fa; /* Cambia el color de fondo al interactuar con las líneas */
+  background-color: #f8f9fa;
+  /* Cambia el color de fondo al interactuar con las líneas */
 }
 
 /* Estilos para las líneas del menú desplegable en modo oscuro al estar activo */
 .dark-menu.show .navbar-toggler-icon {
-  background-color: #f8f9fa; /* Cambia el color de fondo cuando el menú está desplegado */
+  background-color: #f8f9fa;
+  /* Cambia el color de fondo cuando el menú está desplegado */
 }
 
-.dark-mode #iconoredes1{
+.dark-mode #iconoredes1 {
   padding: 0%;
   margin-left: 20%;
   border-radius: 100%;
- width: 55%;
- margin-left: 1.2rem;
-margin-right: 0.1rem;
-transition: background-color 0.5s ease, color 0.5s ease;
-background-color: white;
+  width: 55%;
+  margin-left: 1.2rem;
+  margin-right: 0.1rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: white;
 }
 
-.dark-mode #iconoredes2{
+.dark-mode #iconoredes2 {
   padding: 0%;
   margin-left: 20%;
   border-radius: 100%;
- width: 30%;
- margin-left: 2rem;
-margin-right: 1.6rem;
-transition: background-color 0.5s ease, color 0.5s ease;
-background-color: white;
+  width: 30%;
+  margin-left: 2rem;
+  margin-right: 1.6rem;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: white;
 }
 
-.dark-mode #sobremidark{
+.dark-mode #sobremidark {
   background-color: #000000;
   color: white;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.dark-mode #cvdark{
+.dark-mode #cvdark {
   background-color: #000000;
   color: white;
   transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.dark-mode #spanproyectos{
+  color: rgb(255, 255, 255);
+  text-shadow:2px 2px 2px rgb(255, 57, 219) ;
+  
+  
+  
+}
+
+
+
+
+/* Estilos específicos para el menú desplegable en móviles */
+@media (max-width: 991.98px) {
+
+  .dark-mode #spanproyectos{
+    color: rgb(203, 8, 251);
+   
+    filter: drop-shadow(10px 10px 10px rgb(255, 57, 219));
+    background-color: transparent;
+    
+    
+    
+  }
+
+
+
+  .dark-mode .menu-text {
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+
+
+
+  }
+
+
+  img {
+    margin-left: 0.rem;
+  }
+
+  .navbar-toggler {
+    margin-top: 0;
+
+  }
+
+  .navbar-collapse {
+    background-color: #f8f9fa;
+    /* Fondo del menú desplegable */
+    border-top: 1px solid #dee2e6;
+    /* Línea superior */
+    padding: 0.5rem;
+    /* Espaciado interno */
+  }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    /* Fondo del menú desplegable */
+    border: none;
+    /* Sin borde */
+    padding: 0.5rem 0;
+    /* Espaciado interno */
+  }
+
+  .dropdown-divider {
+    background-color: #dee2e6;
+    /* Color de la línea divisoria */
+  }
+
+  .icon {
+    width: 2.5rem;
+    /* Tamaño reducido para íconos de redes sociales */
+  }
+
+  .dark-mode .navbar-toggler {
+    margin-top: 0;
+
+  }
+
+  .dark-mode .navbar-collapse {
+    background-color: #f8f9fa;
+    /* Fondo del menú desplegable */
+    border-top: 1px solid #dee2e6;
+    /* Línea superior */
+    padding: 0.5rem;
+    /* Espaciado interno */
+  }
+
+  .dark-mode .dropdown-menu {
+    background-color: #f8f9fa;
+    /* Fondo del menú desplegable */
+    border: none;
+    /* Sin borde */
+    padding: 0.5rem 0;
+    /* Espaciado interno */
+  }
+
+ 
+  .dark-mode .icon {
+    width: 2.5rem;
+    /* Tamaño reducido para íconos de redes sociales */
+  }
+}
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-3px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes parpadear{
+  to{
+   
+    box-shadow: 0 0 100px rgb(216, 56, 224);
+  }
 }

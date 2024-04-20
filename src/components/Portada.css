@@ -12,7 +12,7 @@
   text-align: center;
   padding-bottom: 3rem;
   padding-top: 9rem;
-  
+  padding-right: 7rem;
 }
 
 .contenedor-nombre {
@@ -34,7 +34,7 @@
   border-width: 0.3rem;
   width: 30%;
   margin-bottom: 10rem;
-  margin-right: 6rem;
+  margin-right: 0rem;
 
 
 }
@@ -58,12 +58,14 @@ h1 {
 
 @media (max-width: 991.98px) {
 
+  
+
   .contenedor-nombre {
     padding: 3rem;
     padding-top: 5rem;
     margin-left: 3rem;
     margin-bottom: 4rem;
-
+    
 
   }
 
@@ -97,7 +99,8 @@ h1 {
     font-weight: 600;
     font-style: normal;
     font-size: 3rem;
-    margin-left: 3%;
+    margin-left: 0%;
+    
 
   }
 
@@ -162,7 +165,7 @@ h2 {
 
 @media (max-width: 991.98px) {
   .contenedor-nombre {
-    padding: 7%;
+    padding: 5%;
     padding-top: 5rem;
     margin-left: 0rem;
   }
@@ -193,6 +196,7 @@ h2 {
   
   transition: all 0.5s ease; /* Transición suave de medio segundo */
   animation: parpadear 3s infinite backwards ;
+  
   background-color: rgb(10, 10, 10);
   color: white;
   box-shadow: 0 0 20px rgb(216, 56, 224);
@@ -205,5 +209,6 @@ h2 {
   to{
    
     box-shadow: 0 0 100px rgb(216, 56, 224);
+    
   }
 }
