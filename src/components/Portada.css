@@ -88,6 +88,7 @@ h1 {
     border-color: rgb(0, 130, 134);
     border-width: 0.3rem;
     margin-bottom: 5rem;
+    
   
 
 
@@ -172,6 +173,8 @@ h2 {
 
   .dark-mode .PortadaTotal{
     padding-top: 2.8rem;
+    
+   
   }
 
 }
@@ -199,7 +202,10 @@ h2 {
   
   background-color: rgb(10, 10, 10);
   color: white;
-  box-shadow: 0 0 20px rgb(216, 56, 224);
+  box-shadow: 0 0 20px rgb(216, 56, 224),
+  0 0 20px rgb(216, 56, 224),
+  0 0 20px #a200ff;
+   
   ;
   border-width: 0.4rem;
   
