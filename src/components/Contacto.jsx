@@ -85,8 +85,7 @@ const Contacto = ({ darkMode }) => {
                     <label htmlFor="email">Email:</label>
                     <input
                         type="text"                        
-                        name="email"      
-                                            
+                        name="email"                                           
                         required
                     />
 
