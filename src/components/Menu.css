@@ -6,10 +6,11 @@
 }
 
 
+
+
 #boton-proyectos {
   color: salmon;
 }
-
 
 
 
@@ -43,6 +44,7 @@ a {
 .icon {
   width: 4rem;
 }
+
 
 .d-inline-block {
   padding-right: 1rem;
@@ -299,3 +301,23 @@ a {
     box-shadow: 0 0 100px rgb(216, 56, 224);
   }
 }
+
+<!-- HTML !-->
+<button class="button-52" role="button">Button 52</button>
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+

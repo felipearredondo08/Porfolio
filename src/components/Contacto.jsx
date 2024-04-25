@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './Contacto.css';
 import facelogo from "../assets/facebook.png";
@@ -11,32 +10,38 @@ const Contacto = ({ darkMode }) => {
     const [email, setEmail] = useState('');
     const [mensaje, setMensaje] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-
-        fetch('/enviar_formulario', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ nombre, email, mensaje }),
-        })
-            .then((response) => response.text())
-            .then((data) => {
-                console.log(data);
-                alert(data);
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert('Hubo un error al enviar el formulario');
+    
+        try {
+            const response = await fetch('/enviar_formulario', { // Ajuste aquí
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ nombre, email, mensaje }),
             });
+
+            if (response.ok) {
+                alert('Correo enviado correctamente');
+                // Restablecer el formulario después de enviar
+                setNombre('');
+                setEmail('');
+                setMensaje('');
+            } else {
+                alert('Error al enviar el correo');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('Hubo un error al enviar el formulario');
+        }
     };
 
     return (
         <>
             <div className={`contenedor-contacto ${darkMode ? 'dark-mode' : ''}`}>
-            <div className='informacion-contacto'>
-                    <h2>Contacto</h2>
+                <div className='informacion-contacto'>
+                    <h2 id="titulocontacto">Contacto</h2>
                     <h3>Email</h3>
                     <p id="pemail">hellvilleskateshop@gmail.com</p>
                     <h3>Telefono</h3>
@@ -47,7 +52,6 @@ const Contacto = ({ darkMode }) => {
                         <a href='https://www.instagram.com/felipe_axxedondo/?hl=es' target="_blank" rel="noopener noreferrer"><img src={instalogo} alt="Logo" className="icon-contact"></img></a>
                         <a href='https://github.com/felipearredondo08' target="_blank" rel="noopener noreferrer"><img src={gitlogo} alt="Logo" className="icon-contact"></img></a>
                         <a href='https://www.linkedin.com/in/felipe-arredondo-641231268/' target="_blank" rel="noopener noreferrer"><img src={linkedinlogo} alt="Logo" className="icon-contact"></img></a>
-                        
                     </div>
                 </div>
             
@@ -82,8 +86,7 @@ const Contacto = ({ darkMode }) => {
                         required
                     ></textarea>
 
-                    {/* Utilizamos un enlace <a> en lugar de un botón <input> */}
-                    <a href="#" className="ov-btn-slide-left" onClick={handleSubmit}>Enviar</a>
+                    <button className="ov-btn-slide-left" type="submit">Enviar</button>
                 </form>
             </div>
         </>
@@ -91,3 +94,5 @@ const Contacto = ({ darkMode }) => {
 };
 
 export default Contacto;
+
+{/* <a href="#" className="ov-btn-slide-left" onClick={handleSubmit}>Enviar</a> */}

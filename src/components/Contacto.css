@@ -275,6 +275,10 @@
     border-color: rgb(243, 224, 81);
 }
 
+.dark-mode #titulocontacto{
+    color: azure;
+    text-shadow: 0 0 50px rgb(71, 138, 255);
+}
 
 @media (max-width: 991.98px) {
 

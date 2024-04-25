@@ -1,6 +1,9 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const nodemailer = require('nodemailer');
+import dotenv from 'dotenv';
+import express from 'express';
+import bodyParser from 'body-parser';
+import nodemailer from 'nodemailer';
+
+dotenv.config();
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -10,7 +13,7 @@ const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'hellvilleskateshop@gmail.com',
-    pass: 'invalido2k3einvalido2k3e',
+    pass: process.env.PASSWORD,
   },
 });
 
@@ -39,6 +42,6 @@ app.post('/enviar_formulario', (req, res) => {
 });
 
 // Inicia el servidor
-app.listen(3000, () => {
+app.listen(3002, () => {
   console.log('Servidor corriendo en el puerto 3000');
 });
