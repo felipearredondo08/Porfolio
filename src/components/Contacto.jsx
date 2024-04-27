@@ -7,8 +7,8 @@ import linkedinlogo from "../assets/linkedin.png";
 import emailjs from '@emailjs/browser'
 
 const Contacto = ({ darkMode }) => {
-    const [colorBoton, setColorBoton] = useState(''); // Estado para el color del botón
-    const [mensajeEnviado, setMensajeEnviado] = useState(false); // Estado para el mensaje "Mensaje enviado"
+    const [colorBoton, setColorBoton] = useState('');
+    const [mensajeEnviado, setMensajeEnviado] = useState(false);
     const refForm = useRef();
 
     const handleSubmit = (event) => {
@@ -20,10 +20,9 @@ const Contacto = ({ darkMode }) => {
         emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
             .then(result => {
                 console.log(result.text);
-                if (result.text === 'OK') { // Verifica si el mensaje es "OK"
-                    setColorBoton('lawngreen'); // Cambia el color del botón a verde
-                    setMensajeEnviado(true); // Muestra el mensaje "Mensaje enviado"
-                    // Oculta el mensaje después de 2 segundos
+                if (result.text === 'OK') {
+                    setColorBoton('lawngreen');
+                    setMensajeEnviado(true);
                     setTimeout(() => setMensajeEnviado(false), 2000);
                 }
             })
@@ -66,7 +65,7 @@ const Contacto = ({ darkMode }) => {
 
                     <label htmlFor="mensaje">Mensaje:</label>
                     <textarea
-                        maxLength="500"
+                        maxLength="1000"
                         name="message"
                         cols="30"
                         rows="50"
@@ -74,7 +73,7 @@ const Contacto = ({ darkMode }) => {
                     ></textarea>
 
                     <button className="ov-btn-slide-left" style={{ backgroundColor: colorBoton }} type="submit">Enviar</button>
-                    {mensajeEnviado && <p>Mensaje enviado</p>}
+                    {mensajeEnviado && <p className="mensaje-enviado">Mensaje enviado</p>}
                 </form>
             </div>
         </>

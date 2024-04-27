@@ -8,6 +8,7 @@
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
+    
 
 }
 
@@ -108,7 +109,8 @@
     margin-left: auto;
     margin-right: auto;
     padding: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    
 
 
 }
@@ -149,7 +151,9 @@
 
 }
 
-
+.mensaje-enviado {
+    margin-left:29%;
+}
 
 .formulario-contacto {
     --shadowColor: 187 60% 40%;
@@ -185,6 +189,7 @@
 .iconos-redes {
     display: flex;
     justify-content: center;
+    margin-top:3rem;
 }
 
 /* boton agregado al ultimo */
@@ -315,6 +320,10 @@
 }
 
 @media (max-width: 991.98px) {
+
+    .mensaje-enviado {
+        margin-left:20%;
+    }
 
     .ov-btn-slide-left {
     
