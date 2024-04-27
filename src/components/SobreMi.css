@@ -8,6 +8,13 @@
     border: 0.5rem solid;
     margin-left: auto;
     margin-right: auto;
+    
+}
+
+.container-about:hover{
+    transform: scale(1.02);
+	/* Cambia el tamaño al 102% del tamaño original */
+	transition: transform 0.3s ease;
 }
 
 .container-about:hover {

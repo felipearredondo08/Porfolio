@@ -1,4 +1,4 @@
-import React, { useState , useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import './Contacto.css';
 import facelogo from "../assets/facebook.png";
 import instalogo from "../assets/instagram.png";
@@ -7,54 +7,28 @@ import linkedinlogo from "../assets/linkedin.png";
 import emailjs from '@emailjs/browser'
 
 const Contacto = ({ darkMode }) => {
-    // const [nombre, setNombre] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [mensaje, setMensaje] = useState('');
+    const [colorBoton, setColorBoton] = useState(''); // Estado para el color del botón
+    const [mensajeEnviado, setMensajeEnviado] = useState(false); // Estado para el mensaje "Mensaje enviado"
+    const refForm = useRef();
 
-    // const handleSubmit = async (e) => {
-    //     e.preventDefault();
+    const handleSubmit = (event) => {
+        event.preventDefault();
 
-
-        // intento de formulario con emailJs
-        const refForm = useRef ();
-
-        const handleSubmit = (event) => {
-            event.preventDefault();
-            
-
-            const servideId = "service_z0mphhb";
-            const templateId = "template_bsw1l2p";
-            const apiKey = "l7TaD5fLm2EclWNmI";
-            emailjs.sendForm(servideId, templateId , refForm.current, apiKey)
-            .then( result => console.log(result.text))
-            .catch( error => console.error(error))
-        };
-
-
-        // intento de formulario con chatgpt
-        // try {
-        //     const response = await fetch('/enviar_formulario', {
-        //         method: 'POST',
-        //         headers: {
-        //             'Content-Type': 'application/json',
-        //         },
-        //         body: JSON.stringify({ nombre, email, mensaje }),
-        //     });
-
-        //     if (response.ok) {
-        //         alert('Correo enviado correctamente');
-        //         // Restablecer el formulario después de enviar
-        //         setNombre('');
-        //         setEmail('');
-        //         setMensaje('');
-        //     } else {
-        //         alert('Error al enviar el correo');
-        //     }
-        // } catch (error) {
-        //     console.error('Error:', error);
-        //     alert('Hubo un error al enviar el formulario');
-        // }
-    // };
+        const serviceId = "service_z0mphhb";
+        const templateId = "template_bsw1l2p";
+        const apiKey = "l7TaD5fLm2EclWNmI";
+        emailjs.sendForm(serviceId, templateId, refForm.current, apiKey)
+            .then(result => {
+                console.log(result.text);
+                if (result.text === 'OK') { // Verifica si el mensaje es "OK"
+                    setColorBoton('lawngreen'); // Cambia el color del botón a verde
+                    setMensajeEnviado(true); // Muestra el mensaje "Mensaje enviado"
+                    // Oculta el mensaje después de 2 segundos
+                    setTimeout(() => setMensajeEnviado(false), 2000);
+                }
+            })
+            .catch(error => console.error(error));
+    };
 
     return (
         <>
@@ -73,19 +47,20 @@ const Contacto = ({ darkMode }) => {
                         <a href='https://www.linkedin.com/in/felipe-arredondo-641231268/' target="_blank" rel="noopener noreferrer"><img src={linkedinlogo} alt="Logo" className="icon-contact"></img></a>
                     </div>
                 </div>
-            
-                <form ref={refForm} action="" onSubmit={handleSubmit} className="formulario-contacto">
+
+                <form ref={refForm} onSubmit={handleSubmit} className="formulario-contacto">
+                    <h2 id="Titulo-form">Enviar mensaje</h2>
                     <label htmlFor="nombre">Nombre:</label>
                     <input
-                        type="text"                        
-                        name="username"                   
+                        type="text"
+                        name="username"
                         required
                     />
 
                     <label htmlFor="email">Email:</label>
                     <input
-                        type="text"                        
-                        name="email"                                           
+                        type="email"
+                        name="email"
                         required
                     />
 
@@ -93,16 +68,13 @@ const Contacto = ({ darkMode }) => {
                     <textarea
                         maxLength="500"
                         name="message"
-                        id=""
                         cols="30"
                         rows="50"
-                        
-                       
-                        
                         required
                     ></textarea>
 
-                    <button className="ov-btn-slide-left" type="submit">Enviar</button>
+                    <button className="ov-btn-slide-left" style={{ backgroundColor: colorBoton }} type="submit">Enviar</button>
+                    {mensajeEnviado && <p>Mensaje enviado</p>}
                 </form>
             </div>
         </>

@@ -11,6 +11,20 @@
 
 }
 
+#Titulo-form{  text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    padding-bottom: 1rem;
+}
+
+.formulario-contacto:hover{
+    transform: scale(1.02);
+	/* Cambia el tamaño al 102% del tamaño original */
+	transition: transform 0.3s ease;
+}
+
 
 
 
@@ -75,6 +89,12 @@
     margin-right: auto;
     padding: 3rem;
     margin-bottom: 2rem;
+}
+
+.informacion-contacto:hover{
+    transform: scale(1.02);
+	/* Cambia el tamaño al 102% del tamaño original */
+	transition: transform 0.3s ease;
 }
 
 .informacion-contacto {
@@ -184,7 +204,14 @@
     overflow: hidden;
     display: inline-block;
     text-decoration: none;
-    margin-left: 31%;
+    margin-left: 35%;
+
+}
+
+
+.dark-mode .ov-btn-slide-left {
+   
+    margin-left: 30%;
 
 }
 
@@ -282,7 +309,20 @@
     text-shadow: 0 0 50px rgb(71, 138, 255);
 }
 
+.dark-mode #Titulo-form{
+    color: azure;
+    text-shadow: 0 0 50px rgb(255, 255, 10);
+}
+
 @media (max-width: 991.98px) {
+
+    .ov-btn-slide-left {
+    
+        margin-left: 25%;
+    
+    }
+
+    
 
 
     .icon-contact {

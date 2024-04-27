@@ -1,3 +1,4 @@
+
 .navbar {
   border-color: rgb(255, 255, 255);
   border-style: dashed;
@@ -5,7 +6,25 @@
 
 }
 
+#contactoid{
+  color:black;
+  border-color: rgb(219, 219, 219);
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+  
+}
 
+.dark-mode #contactoid{
+  color:rgb(255, 255, 255);
+  background-color: transparent;
+  border-color: white;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+  font-size: large;
+}
 
 
 #boton-proyectos {
@@ -59,6 +78,7 @@ a {
   /* Duración de la animación: 2 segundos */
   animation-fill-mode: forwards;
   /* Mantener el estado final de la animación */
+  
 }
 
 .navbar {
@@ -72,6 +92,7 @@ a {
   /* Texto blanco */
   /* Agrega cualquier otra propiedad CSS que desees para el modo oscuro */
   border-color: white;
+  
 
 
 }
@@ -160,6 +181,8 @@ a {
   color: white;
   transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+
 
 .dark-mode #cvdark {
   background-color: #000000;
@@ -254,6 +277,7 @@ a {
     /* Línea superior */
     padding: 0.5rem;
     /* Espaciado interno */
+    border-radius: 1rem;
   }
 
   .dark-mode .dropdown-menu {
@@ -301,23 +325,3 @@ a {
     box-shadow: 0 0 100px rgb(216, 56, 224);
   }
 }
-
-<!-- HTML !-->
-<button class="button-52" role="button">Button 52</button>
-
-/* CSS */
-.button-52 {
-  font-size: 16px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 20px 13px;
-  outline: 0;
-  border: 1px solid black;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-

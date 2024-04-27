@@ -147,6 +147,13 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
             <li className="nav-item">
               <a id="sobremidark" className="nav-link active" aria-current="page" href="#container-about">Sobre mi</a>
             </li>
+            
+            <li className="nav-item">
+              <a id="cvdark" className="nav-link active" aria-current="page" href={curriculumPdf} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+            </li>
+            <li className="nav-item">
+              <a id="contactoid"className="nav-link" aria-current="page" href="#contenedor-contacto">Contacto</a>
+            </li>
             <li id="botonproyectosdrop" className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="boton-proyectos"><span id="spanproyectos">Proyectos</span></a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -158,9 +165,6 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
                 <li><a className="dropdown-item" href="#webcode">WebCode Desarrollo web</a></li>
                 <li><a className="dropdown-item" href="#calculadora">Calculadora</a></li>
               </ul>
-            </li>
-            <li className="nav-item">
-              <a id="cvdark" className="nav-link active" aria-current="page" href={curriculumPdf} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
             </li>
             <li className="social-icons">
               <a href='https://github.com/felipearredondo08' target="_blank" rel="noopener noreferrer"><img id="iconoredes1" src={gitlogo} alt="Logo" width="30" height="24" className="icon"></img></a>
@@ -187,6 +191,9 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
               <li className="nav-item">
                 <a className="nav-link" href={curriculumPdf} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
               </li>
+              <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#contenedor-contacto">Contacto</a>
+            </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="spanproyectos">Proyectos</span></a>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
