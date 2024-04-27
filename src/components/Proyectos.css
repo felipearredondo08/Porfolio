@@ -163,6 +163,27 @@ button {
 	--shadowColor: 200 60% 40%;
 }
 
+#boton-modal {
+	margin-left: 46%;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	
+}
+
+
+.modal-video {
+	width: 100%;
+	/* Ancho del video al 100% del contenedor */
+	height: auto;
+	/* Altura automática para mantener la relación de aspecto */
+	max-width: 100%;
+	/* Ancho máximo igual al ancho del contenedor */
+	max-height: 90vh;
+	/* Altura máxima igual al 90% del alto de la ventana */
+}
+
+
+
 @media (max-width: 991.98px) {
 	
 
@@ -235,7 +256,9 @@ button {
 
 	}
 
-	
+	.cta h2{
+		text-align: center;
+	}
 
 }
 
@@ -276,4 +299,9 @@ button {
 .dark-mode #titulo-proyectos {
 	color: azure;
     text-shadow: 0 0 50px rgb(255, 135, 253);
+}
+
+.dark-mode .cta button{
+	border-color: black;
+	border-width: 0.35rem;
 }
