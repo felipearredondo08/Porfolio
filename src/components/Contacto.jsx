@@ -31,7 +31,7 @@ const Contacto = ({ darkMode }) => {
 
     return (
         <>
-            <div className={`contenedor-contacto ${darkMode ? 'dark-mode' : ''}`}>
+            <div id="contenedor-contacto" className={`contenedor-contacto ${darkMode ? 'dark-mode' : ''}`}>
                 <div className='informacion-contacto'>
                     <h2 id="titulocontacto">Contacto</h2>
                     <h3>Email</h3>

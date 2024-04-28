@@ -11,6 +11,14 @@
     
 }
 
+#p1{
+    text-indent:4rem;
+}
+
+#p2{
+    text-indent: 1rem;
+}
+
 .container-about:hover{
     transform: scale(1.02);
 	/* Cambia el tamaño al 102% del tamaño original */

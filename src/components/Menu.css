@@ -8,22 +8,27 @@
 
 #contactoid{
   color:black;
-  border-color: rgb(219, 219, 219);
+  border-color: rgb(220, 220, 220);
+  background-color: white;
+ 
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-style: normal;
   font-size: large;
+ 
+  
   
 }
 
 .dark-mode #contactoid{
   color:rgb(255, 255, 255);
-  background-color: transparent;
-  border-color: white;
+  background-color: black;
+  border-color: rgb(231, 231, 231);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 600;
   font-style: normal;
   font-size: large;
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 

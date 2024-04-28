@@ -31,7 +31,7 @@
     color: #ffffff;
     border: none;
     border-radius: 0%;
-    padding:1rem;
+    padding:0.3rem;
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -40,13 +40,37 @@
     bottom: 22px; /* Ajusta la posición vertical */
     right: 400px; /* Ajusta la posición horizontal */
     size: 20rem;
-    ;
+    
+    transition: all ease 0.5s;
   }
+
+  .scroll-to-top-button:hover {
+    background-color: #fbfbfb;
+    border-color: black;
+    border-width: 0.1rem;
+    border-style:solid ;
+  
+    
+    transition: all ease 0.5s;
+  }
+
+
+ 
+
+
+
   
   .scroll-to-top-button i {
     font-size:30px;
     color: #ffffff; /* Ajusta el color del icono a blanco */
+    padding: 1rem;
     
+}
+
+.scroll-to-top-button i:hover {
+  font-size:30px;
+  color: #000000; /* Ajusta el color del icono a blanco */
+  
 }
 
 
@@ -115,5 +139,20 @@
   border-radius: 30rem;
   padding: 0.8rem;
   border-style: dashed;
+  transition: all ease 0.5s;
   
 }
+
+.dark-mode .scroll-to-top-button i:hover{
+  font-size:30px;
+  color: #000000; /* Ajusta el color del icono a blanco */
+  border-color: #ffffff;
+  border: solid;
+  border-radius: 30rem;
+  padding: 0.8rem;
+  border-style: dashed;
+  background-color: white;
+  
+  
+}
+

@@ -152,7 +152,7 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
               <a id="cvdark" className="nav-link active" aria-current="page" href={curriculumPdf} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
             </li>
             <li className="nav-item">
-              <a id="contactoid"className="nav-link" aria-current="page" href="#contenedor-contacto">Contacto</a>
+              <a id="contactoid"className="nav-link" href="#contenedor-contacto">Contacto</a>
             </li>
             <li id="botonproyectosdrop" className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="boton-proyectos"><span id="spanproyectos">Proyectos</span></a>
@@ -192,7 +192,7 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
                 <a className="nav-link" href={curriculumPdf} target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
               </li>
               <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#contenedor-contacto">Contacto</a>
+              <a className="nav-link"  href="#contenedor-contacto">Contacto</a>
             </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><span id="spanproyectos">Proyectos</span></a>

@@ -262,6 +262,37 @@ button {
 
 }
 
+.dark-mode .cta{
+	background-color: transparent;
+	
+}
+
+.dark-mode .cta button{
+	background-color: black;
+	color: white;
+	border-color: white;
+	border-width: 0.35rem;
+}
+
+
+
+.dark-mode .cta h2{
+	color: aliceblue;
+	font-family: "IBM Plex Mono", monospace;
+	font-weight: 600;
+    font-style: normal;
+}
+
+.dark-mode .cta p{
+	color: aliceblue;
+}
+
+.dark-mode .cta a{
+	border-color: white;
+	background-color: black;
+	color: white;
+}
+
 .dark-mode .proyectos-container {
    
 	background-color: rgb(10, 10, 10);
@@ -301,7 +332,3 @@ button {
     text-shadow: 0 0 50px rgb(255, 135, 253);
 }
 
-.dark-mode .cta button{
-	border-color: black;
-	border-width: 0.35rem;
-}
