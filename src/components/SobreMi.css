@@ -26,8 +26,8 @@
 }
 
 .container-about:hover {
-    --shadowColor: 200 60% 40%;
-
+    --shadowColor: 1000 60% 40%;  
+/* antes decia 200 el primer parametro */
 }
 
 .subtitulos {

@@ -11,6 +11,7 @@ const Portada = ({ darkMode }) => {
             <span id="felipe-color">Felipe</span>
             <span id="arredondo-color"> Arredondo</span>
           </h1>
+          
           <h2 id="desarrollador" className={`fadeIn slideIn ${darkMode ? 'white-text' : ''}`}>Desarrollador Web</h2>
         </div>
         <img src={Portadafoto} alt="portada" id="foto-portada" />

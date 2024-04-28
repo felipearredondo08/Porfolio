@@ -12,7 +12,11 @@ button {
 
 }
 
-
+.cta h2{
+	font-family: "IBM Plex Mono", monospace;
+	font-size:1.5rem;
+	font-weight: 800;
+}
 
 .cta__text-column button {
 	align-items: center;
@@ -122,7 +126,7 @@ button {
 }
 
 .proyectos-container:hover {
-	--shadowColor: 200 60% 40%;
+	--shadowColor: 600 60% 40%; 
 
 }
 
@@ -270,10 +274,16 @@ button {
 .dark-mode .cta button{
 	background-color: black;
 	color: white;
-	border-color: white;
+	border-color: rgb(255, 255, 255);
 	border-width: 0.35rem;
+	transition: all 0.5s ease;
+	
+	
 }
 
+.dark-mode .cta button:hover{
+	box-shadow: 0 0 20px rgb(255, 130, 232);
+}
 
 
 .dark-mode .cta h2{
@@ -281,6 +291,8 @@ button {
 	font-family: "IBM Plex Mono", monospace;
 	font-weight: 600;
     font-style: normal;
+	filter: drop-shadow(3px 3px 3px rgb(236, 62, 242))
+	
 }
 
 .dark-mode .cta p{
@@ -291,6 +303,11 @@ button {
 	border-color: white;
 	background-color: black;
 	color: white;
+	transition: all 0.5s ease;
+}
+
+.dark-mode .cta a:hover{
+	box-shadow: 0 0 20px rgb(255, 130, 232);
 }
 
 .dark-mode .proyectos-container {

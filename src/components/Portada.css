@@ -13,6 +13,7 @@
   padding-bottom: 3rem;
   padding-top: 9rem;
   padding-right: 7rem;
+  
 }
 
 .contenedor-nombre {
@@ -20,8 +21,15 @@
   padding-top: 5rem;
   margin-left: 3rem;
   margin-bottom: 10rem;
+ 
+  animation: fadeIn 4s ease-in-out;
 
 
+}
+
+.contenedor-nombre h1{
+  
+  animation: move linear 10000ms infinite;
 }
 
 
@@ -36,6 +44,7 @@
   margin-bottom: 10rem;
   margin-right: 0rem;
   
+  animation: fadeIn 1s ease-in-out;
 
 
 }
@@ -47,14 +56,20 @@ h1 {
   font-weight: 600;
   font-style: normal;
   font-size: 4rem;
+  
+ 
+  
 }
 
 #felipe-color {
   background-color: rgb(50, 188, 212);
+  
 }
 
 #arredondo-color {
   background-color: rgb(172, 84, 254);
+  
+  
 }
 
 @media (max-width: 991.98px) {
@@ -67,6 +82,8 @@ h1 {
     margin-left: 3rem;
     margin-bottom: 4rem;
     
+    
+    
 
   }
 
@@ -77,6 +94,8 @@ h1 {
     padding: 3rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
+    
+    
 
 
   }
@@ -161,6 +180,7 @@ h1 {
 h2 {
   animation-delay: 6;
   /* Retraso para el h2 */
+  
 }
 
 
@@ -170,6 +190,7 @@ h2 {
     padding: 5%;
     padding-top: 5rem;
     margin-left: 0rem;
+    
   }
 
   .dark-mode .PortadaTotal{
@@ -210,6 +231,7 @@ h2 {
   ;
   border-width: 0.4rem;
   
+  
 }
 
 @keyframes parpadear{
@@ -217,5 +239,81 @@ h2 {
    
     box-shadow: 0 0 100px rgb(216, 56, 224);
     
+  }
+}
+
+.animated-shadow {
+  color: #ffffff;
+  font: normal 140px Varela Round, sans-serif;
+  height: 10px;
+  left: 0;
+  letter-spacing: 5px;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
+}
+/*Animación para rotar las sombras*/
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
+  }
+  25% {
+    text-shadow:
+      -4px -4px 0 #13f1fc,
+      -3px -3px 0 #13f1fc,
+      -2px -2px 0 #13f1fc,
+      -1px -1px 0 #13f1fc,
+      4px 4px 0 #da0641,
+      3px 3px 0 #da0641,
+      2px 2px 0 #da0641,
+      1px 1px 0 #da0641
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 #da0641,
+      -3px 3px 0 #da0641,
+      -2px 2px 0 #da0641,
+      -1px 1px 0 #da0641,
+      4px -4px 0 #13f1fc,
+      3px -3px 0 #13f1fc,
+      2px -2px 0 #13f1fc,
+      1px -1px 0 #13f1fc
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 #13f1fc,
+      3px 3px 0 #13f1fc,
+      2px 2px 0 #13f1fc,
+      1px 1px 0 #13f1fc,
+      -4px -4px 0 #da0641,
+      -3px -3px 0 #da0641,
+      -2px -2px 0 #da0641,
+      -1px -1px 0 #da0641
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 #da0641,
+      3px -3px 0 #da0641,
+      2px -2px 0 #da0641,
+      1px -1px 0 #da0641,
+      -4px 4px 0 #13f1fc,
+      -3px 3px 0 #13f1fc,
+      -2px 2px 0 #13f1fc,
+      -1px 1px 0 #13f1fc
+    ;
   }
 }

@@ -24,6 +24,9 @@
     transform: scale(1.02);
 	/* Cambia el tamaño al 102% del tamaño original */
 	transition: transform 0.3s ease;
+   
+    
+
 }
 
 
@@ -118,7 +121,7 @@
 
 
 .informacion-contacto:hover {
-    --shadowColor: 200 60% 40%;
+    --shadowColor: 220 60% 40%;
 
 
 }
@@ -168,12 +171,14 @@
     margin-right: auto;
     padding-bottom: 2rem;
 
+    
+
 
 }
 
 
 .formulario-contacto:hover {
-    --shadowColor: 200 60% 40%;
+    --shadowColor: 150 60% 40%;
 }
 
 
