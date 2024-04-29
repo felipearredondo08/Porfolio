@@ -153,7 +153,7 @@ const Proyectos = ({ darkMode }) => {
                             <h2>mNEMO</h2>
                             <p>Proyecto desarrollado en REACT cuya función es ser un anotador de tareas a cumplir.</p>
                             <p className="lenguajes">Desarrollado en: React Vite.</p>
-                            <a className="irAWeba" href="https://661a83ed8aae174004a61a22--cute-dragon-57c927.netlify.app/">Ir a la web</a>
+                            <a className="irAWeb" href="https://661a83ed8aae174004a61a22--cute-dragon-57c927.netlify.app/">Ir a la web</a>
                         </div>
                     </article>
 
@@ -163,7 +163,7 @@ const Proyectos = ({ darkMode }) => {
                             <h2>Receptivo Cataratas</h2>
                             <p>Proyecto desarrollado en WordPress para la empresa Receptivo Cataratas.</p>
                             <p className="lenguajes">Desarrollado en: WordPress.</p>
-                            <a className="irAWeba" href="https://www.receptivocataratas.com">Ir a la web</a>
+                            <a className="irAWeb" href="https://www.receptivocataratas.com">Ir a la web</a>
                         </div>
                     </article>
                     
@@ -221,6 +221,7 @@ const Proyectos = ({ darkMode }) => {
                             <p>Proyecto desarrollado como practica de JS.</p>
                             <p className="lenguajes">Desarrollado en: Html5, Css3 y Javascript </p>
                             <a className="irAWeb" href="https://661c459d7b4a5ebc0a310a4b--splendid-arithmetic-1d9605.netlify.app/">Ir a la web</a>
+                            
                         </div>
                     </article>
 

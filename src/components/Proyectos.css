@@ -9,6 +9,7 @@ button {
 	border-radius: 0.6rem;
 	font-weight: 700;
 	border: 0.35rem solid;
+	
 
 }
 
@@ -23,7 +24,13 @@ button {
 	margin-left: 26%;
 	align-self: center;
 	font-family: "IBM Plex Mono", monospace;
+	
+	
+
 }
+
+
+
 
 .contenedor-tarjetas {
 
@@ -44,6 +51,7 @@ button {
 		font-size: 1.8rem;
 	}
 }
+
 
 .cta {
 
@@ -80,8 +88,8 @@ button {
 }
 
 .cta a {
-	margin-left: 5rem;
-	display: inline-block;
+	
+	
 	color: black;
 	padding: 0.5rem 3rem;
 	text-decoration: none;
@@ -89,14 +97,18 @@ button {
 	border-radius: 0.6rem;
 	font-weight: 700;
 	border: 0.35rem solid;
-}
 
-@media (max-width: 767.98px) {
-	.cta a {
-		margin-left: 2.5rem;
-		/* Cambia el margen a 0 en pantallas de celular */
-	}
+	
+	display: block; /* Para ocupar todo el ancho disponible */
+	text-align: center;
+	/* Cambia el margen a 0 en pantallas de celular */
+	margin-left: 5rem;
+	margin-right: 5rem;
 }
+	
+	
+
+
 
 #titulo-proyectos {
 	text-align: center;
@@ -189,6 +201,7 @@ button {
 
 
 @media (max-width: 991.98px) {
+
 	
 
 	#boton-modal {
@@ -197,11 +210,12 @@ button {
 
 	.cta__text-column button {
 		align-items: center;
-		margin-left: 18%;
+		margin-left: 15%;
 		align-self: center;
+		
 	}
 
-
+	
 
 
 
@@ -264,6 +278,18 @@ button {
 		text-align: center;
 	}
 
+	.cta a {
+		margin: 2 auto; /* Centra horizontalmente */
+        display: block; /* Para ocupar todo el ancho disponible */
+        text-align: center;
+		/* Cambia el margen a 0 en pantallas de celular */
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+
+  
+
+	
 }
 
 .dark-mode .cta{
@@ -277,6 +303,7 @@ button {
 	border-color: rgb(255, 255, 255);
 	border-width: 0.35rem;
 	transition: all 0.5s ease;
+	
 	
 	
 }
