@@ -21,7 +21,7 @@
   padding-top: 5rem;
   margin-left: 3rem;
   margin-bottom: 10rem;
- 
+  animation: fadeIn;
   animation: fadeIn 4s ease-in-out;
 
 
@@ -89,11 +89,14 @@ h1 {
 
   .PortadaTotal {
     display: block;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    
     padding: 3rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
+    padding-bottom: 1rem;
+     
     
     
 

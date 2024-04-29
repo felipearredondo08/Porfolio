@@ -1,5 +1,5 @@
 .container-about {
-    --shadowColor: 187 60% 40%;
+    --shadowColor: 187 10% 40%;
     background: hsl(68, 100%, 82%);
     width: 90%;
     box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
@@ -19,14 +19,13 @@
     text-indent: 1rem;
 }
 
-.container-about:hover{
+
+
+.container-about:hover {
     transform: scale(1.02);
 	/* Cambia el tamaño al 102% del tamaño original */
 	transition: transform 0.3s ease;
-}
-
-.container-about:hover {
-    --shadowColor: 1000 60% 40%;  
+    --shadowColor: 200 60% 40%;  
 /* antes decia 200 el primer parametro */
 }
 

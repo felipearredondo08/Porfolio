@@ -78,7 +78,9 @@ const SobreMi = ({ darkMode }) => {
                 <img src={unitylogo} alt="Logo" className="icon-about"></img>
             </div>
         </div>
+        
     )
+    
 }
 
 export default SobreMi;

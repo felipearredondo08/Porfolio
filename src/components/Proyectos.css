@@ -114,7 +114,7 @@ button {
 
 	margin-top: 3rem;
 	margin-bottom: 3rem;
-	--shadowColor: 187 60% 40%;
+	--shadowColor: 187 10% 40%;
 	background: hsl(306, 100%, 81%);
 	width: 90%;
 	box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
@@ -126,7 +126,7 @@ button {
 }
 
 .proyectos-container:hover {
-	--shadowColor: 600 60% 40%; 
+	--shadowColor: 200 60% 40%; 
 
 }
 
