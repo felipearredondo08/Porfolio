@@ -156,3 +156,24 @@
   
 }
 
+@media (max-width: 1100px){
+
+  .scroll-to-top-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 34%; /* Ajusta la posición vertical */
+    right: 3%; /* Ajusta la posición horizontal */
+    margin-right: 2rem;
+    padding:1.7rem
+  }
+ 
+}

@@ -360,3 +360,45 @@ a {
     box-shadow: 0 0 100px rgb(216, 56, 224);
   }
 }
+
+@media (max-width: 1100px){
+
+  
+  .navbar-toggler {
+    margin-top: 0;
+    border-color: black;
+    border-style: double;
+    border-width: 0.1rem;
+    border-radius: 0%;
+
+  }
+
+  .navbar-collapse {
+    background-color: #f8f9fa;
+    /* Fondo del menú desplegable */
+    border-top: 1px solid #dee2e6;
+    /* Línea superior */
+    padding: 0.5rem;
+    /* Espaciado interno */
+  }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    /* Fondo del menú desplegable */
+    border: none;
+    /* Sin borde */
+    padding: 0.5rem 0;
+    /* Espaciado interno */
+  }
+
+  .dropdown-divider {
+    background-color: #dee2e6;
+    /* Color de la línea divisoria */
+  }
+
+  .icon {
+    width: 2.5rem;
+    /* Tamaño reducido para íconos de redes sociales */
+  }
+ 
+}
