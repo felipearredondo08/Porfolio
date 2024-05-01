@@ -102,9 +102,10 @@
 }
 
 .informacion-contacto {
+    max-width: 500px;
     --shadowColor: 187 60% 40%;
     background: hsl(178, 83%, 45%);
-    width: 30%;
+    width: 100%;
     box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
     border-radius: 0.8rem;
     overflow: hidden;

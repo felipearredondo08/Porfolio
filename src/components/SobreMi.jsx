@@ -62,7 +62,7 @@ const SobreMi = ({ darkMode }) => {
         <div className={`container-about ${darkMode ? 'dark-mode' : ''}`} id="container-about">
             <h2 className="subtitulos">Sobre mi</h2>
             <p className="descripcion" id="p1"> Mi nombre es Felipe Arredondo, me dedico al desarrollo de aplicaciones web desde hace 5 años. 
-                Realize mis estudios en la Tecnicatura Superior en Desarrollo de Software del "Instituto Dr. Ramon Carrillo". Habiendo terminado 
+                Realizé mis estudios en la Tecnicatura Superior en Desarrollo de Software del "Instituto Dr. Ramon Carrillo". Habiendo terminado 
                 el cursado, orienté mis estudios al desarrollo de sistemas web y aun continuo mi formación en dicha área.<br></br> <span className="descripcion" id="p2">Entre los lenguajes y tecnologías en los que me capacité se encuentran HTML5, CSS, Javascript,  React, WordPress, SQL , Bootstrap, PHP, GIT, C++ y Unity.</span></p>
             <div className="container-iconos">
                 <img src={htmllogo} alt="Logo" className="icon-about"></img>

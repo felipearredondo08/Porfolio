@@ -161,7 +161,7 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
                 <li><a className="dropdown-item" href="#receptivo">Receptivo Cataratas</a></li>
                 <li><a className="dropdown-item" href="#flappy">Flappy Bird Clon</a></li>
                 <li><a className="dropdown-item" href="#hitandjump">Hit and Jump</a></li>
-                <li><a className="dropdown-item" href="#abogada">Abogada Denise Pastrello</a></li>
+                <li><a className="dropdown-item" href="#abogada">Estudio Juridico</a></li>
                 <li><a className="dropdown-item" href="#webcode">WebCode Desarrollo web</a></li>
                 <li><a className="dropdown-item" href="#calculadora">Calculadora</a></li>
               </ul>
@@ -201,7 +201,7 @@ const Menu = ({ toggleDarkMode, darkMode }) => {
                   <li><a className="dropdown-item" href="#receptivo">Receptivo Cataratas</a></li>
                   <li><a className="dropdown-item" href="#flappy">Flappy Bird Clon</a></li>
                   <li><a className="dropdown-item" href="#hitandjump">Hit and Jump</a></li>
-                  <li><a className="dropdown-item" href="#abogada">Abogada Denise Pastrello</a></li>
+                  <li><a className="dropdown-item" href="#abogada">Estudio Juridico</a></li>
                   <li><a className="dropdown-item" href="#webcode">WebCode Desarrollo web</a></li>
                   <li><a className="dropdown-item" href="#calculadora">Calculadora</a></li>
                 </ul>

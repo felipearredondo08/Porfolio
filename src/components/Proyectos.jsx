@@ -192,7 +192,7 @@ const Proyectos = ({ darkMode }) => {
                     <article className="cta" id="abogada">
                         <img src={abogada} alt='Small blue-grey yellow-breasted bird'></img>
                         <div className="cta__text-column">
-                            <h2>Abogada Denise Pastrello</h2>
+                            <h2>Estudio Juridico</h2>
                             <p>Proyecto desarrollado en WordPress para estudio juridico.</p>
                             <p className="lenguajes">Desarrollado en: WordPress.</p>
                             <a className="irAWeb" href="https://abogadadenisepastrello.com/">Ir a la web</a>
