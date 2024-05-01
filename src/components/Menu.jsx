@@ -113,7 +113,8 @@
 
 import React from "react";
 import "./Menu.css";
-import logo from "../assets/emoji-wink.svg";
+// import logo from "../assets/emoji-wink.svg";
+import logo from "../assets/neon.png";
 import gitlogo from "../assets/github.svg";
 import iglogo from "../assets/instagram.svg";
 import curriculumPdf from "../assets/curriculumVitaeFelipeArredondo.pdf";

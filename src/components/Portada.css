@@ -5,13 +5,14 @@
   /* Color de texto en modo oscuro */
 }
 
+
 .PortadaTotal {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 3rem;
-  padding-top: 9rem;
+  padding-bottom: 2rem;
+  padding-top: 10rem;
   padding-right: 7rem;
   
 }
@@ -39,7 +40,7 @@
   border-color: black;
   border-style: dashed;
   border-color: rgb(0, 130, 134);
-  border-width: 0.3rem;
+  border-width: 0.5rem;
   width: 30%;
   margin-bottom: 10rem;
   margin-right: 0rem;
@@ -128,9 +129,7 @@ h1 {
 
   }
 
-  h2 {
-    margin-left: 3%;
-  }
+
 
 
 
